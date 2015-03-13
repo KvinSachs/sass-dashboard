@@ -1,0 +1,141 @@
+
+/*** Utils & Helpers ***/
+  .clearfix:before,
+  .clearfix:after {
+      content: " ";
+      display: table;
+  }
+
+  .clearfix:after {
+      clear: both;
+  }
+
+
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrapper {
+    height: 100vh;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+/*** Master Head ***/
+  .masterHead {
+    float: left;
+    width: 20%;
+    height: inherit;
+    background: #2D3E4E;
+  }
+
+  /*** Main Navigation ***/
+  .mainNavigation ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  .mainNavigation li {
+    transition: background 500ms ease;
+    padding: 10px 20px;
+  }
+  .mainNavigation .is_active {
+    border-left: 3px solid #5BD69C;
+  }
+  .mainNavigation .is_active,
+  .mainNavigation li:hover {
+    background: #263643;
+  }
+  .mainNavigation a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+  }
+  .mainNavigation a:before {
+    margin-right: 10px;
+  }
+
+/*** Main Content ***/
+  .mainContent {
+    float: right;
+    width: 80%;
+    height: inherit;
+    padding: 20px 50px;
+    background: #F1F1F1;
+  }
+
+/*** Quick Menu ***/
+  .quickMenu {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .quickMenu__item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .quickMenu__item--inviteFriend {
+    background: #66B5D6;
+  }
+  .quickMenu__item--location {
+    background: #E87352;
+  }
+  .quickMenu__item--monitor {
+    background: #EECA5A;
+  }
+  .quickMenu__item--tutorial {
+    background: #5FCE9B;
+  }
+  .quickMenu__label,
+  .quickMenu__icon {
+    color: #FFF;
+  }
+  .quickMenu__label {
+    font-weight: 700;
+  }
+  .quickMenu__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    height: 41px;
+    display: block;
+    font-size: 40px;
+  }
+
+/*** Widget ***/
+  .widget {
+    margin-top: 50px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .widget__item {
+    width: 500px;
+    height: 300px;
+    background: #FFF;
+  }
+  .widget__title {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    background: #2D3E4E;
+    color: #FFF;
+  }
