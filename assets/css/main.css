@@ -36,10 +36,16 @@
     background: #2D3E4E;
   }
 
+  .masterHead__avatar{
+    padding: 10px 0 20px 0;
+    text-align: center;
+  }
+
   /*** Main Navigation ***/
   .mainNavigation ul {
     padding: 0;
     list-style-type: none;
+    text-align: left;
   }
   .mainNavigation li {
     transition: background 500ms ease;
